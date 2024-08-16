@@ -1,0 +1,145 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0e0e0e, #111111);
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 130vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('images/hero-background.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #cccccc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-image img {
+    height: 400px;
+    width: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Carousel Styles */
+.carousel {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-image {
+    height: 200px;
+    width: 150px;
+    margin: 0 10px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.carousel-image:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* About, Music, Tour Dates, Worship Sections */
+.about, .music, .tour-dates, .worship {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.about h2, .music h2, .tour-dates h2, .worship h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.about p, .music p, .worship p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #cccccc;
+}
+
+.tour-dates ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tour-dates li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #000000, #333333);
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ff416c;
+}
+
+.social-links p {
+    margin: 5px 0;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #b3b3b3;
+}
+
+.footer p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+    color: #7d7d7d;
+}
